@@ -7,14 +7,19 @@
 - Architecture:
   
   ----------- challenge2.ipynb
+
   
   ----------- app.py
+
   
   ----------- templates
+
   
                 -------------- index.html
+
   
                 -------------- result.html
+
   
                 -------------- error.html
   
