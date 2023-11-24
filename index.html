@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Prediction</title>
+    <!-- Include Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8; /* Light background color */
+            color: #333; /* Text color */
+            padding: 20px;
+        }
+
+        h1 {
+            color: #c80000; /* Chanel red color */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666; /* Subdued text color */
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px; /* Slightly smaller padding */
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ddd; /* Light border color */
+            border-radius: 4px;
+            background-color: #f9f9f9; /* Light background color for inputs */
+        }
+
+        input[type="submit"] {
+            background-color: #c80000; /* Chanel red color */
+            color: #fff;
+            border: none;
+            padding: 12px 20px; /* Slightly larger padding */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a60000; /* Slightly darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="mt-5 mb-4 text-center">Crypto Price Prediction</h1>
+                <form action="/predict" method="post">
+                    <div class="form-group">
+                        <label for="crypto">Choose a crypto:</label>
+                        <select id="crypto" name="crypto" class="form-control">
+                            <option value="BTC-USD">BTC-USD</option>
+                            <option value="BNB-USD">BNB-USD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="days">Number of days to predict:</label>
+                        <input type="number" id="days" name="days" class="form-control" required>
+                    </div>
+                    <input type="submit" value="Predict" class="btn btn-danger"> <!-- Use a red color for the button -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js from CDN (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Include Bootstrap CSS from CDN for styling consistency -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8; /* Light background color */
+            color: #333; /* Text color */
+            padding: 20px;
+        }
+
+        h1 {
+            color: #c80000; /* Chanel red color */
+        }
+
+        p {
+            color: #666; /* Subdued text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="mt-5 mb-4 text-center">Result</h1>
+                <p>Crypto: {{ crypto }}</p>
+                <p>Number of Days to Predict: {{ days }}</p>
+
+                <!-- Insert the chart HTML here -->
+                {{ chart | safe }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js from CDN (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper
